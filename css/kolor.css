@@ -1,0 +1,50 @@
+.btn {
+	font-size:50px;
+	background-color:#ADDBC8;
+	font-family: Verdana, Geneva, sans-serif;
+	color:gray;
+}
+
+#but_log, #but_reg, #mail_but {
+	background-color: #ADDBC8;
+	border-color: #ADDBC8;
+}
+
+
+.btn-info:hover,.btn-info:focus {
+  background-color: #ADDBC8 !important;
+  border-color: #ADDBC8 !important;
+  color:gray;
+}
+
+.navbar-default {
+  background-color:#ADDBC8;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ 
+ 
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #000;
+      background: #CEF0E2;
+	  border-radius: 15px;
+ }
+ 
+ .index {
+	 background-color:#CEF0E2;
+ }
+ 
+ .border {
+	border-style: solid;
+    border-width: 2px;
+    border-radius:15px;
+	border-color: #ADDBC8;
+	
+	background-color:#ADDBC8;
+ }
+ 
+ .border:hover,.border:focus {
+	background-color: #ADDBC8; 
+ }

@@ -1,0 +1,70 @@
+.btn {
+	font-size:50px;
+	background-color:#ECF58E;
+	font-family: Verdana, Geneva, sans-serif;
+	color:gray;
+}
+
+.btn-info:hover,.btn-info:focus {
+  background-color: #ECF58E !important;
+  border-color: #ECF58E !important;
+  color:gray;
+}
+
+.navbar-default {
+  background-color:#ECF58E;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ 
+ 
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #000;
+      background: #ECF58E;
+	  border-radius: 15px;
+ }
+ 
+ .index {
+	 background-color:#EEF5A6;
+ } 
+ 
+ 
+ .border {
+	border-style: solid;
+    border-width: 2px;
+    border-radius:15px;
+	border-color: orange;
+	
+	background-color:#ECF58E;
+ }
+ 
+ .border:hover,.border:focus {
+	background-color: #ECF58E; 
+ }
+ 
+ #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #next_but, #ret_but{
+	border-color:orange;
+	background-color:#ECF58E;	 
+ }
+ 
+ #p11, #p12, #p13, #p14, #p15, #p16, #p17, #p18, #p19, #p20{
+	border-color:orange;
+	background-color:#ECF58E;	 
+ }
+ 
+ #p21, #p22, #p23, #p24, #p25, #p26, #p27, #p28, #p29, #p30{
+	border-color:orange;
+	background-color:#ECF58E;	 
+ }
+ 
+ #p31, #p32, #p33, #p34, #p35, #p36, #p37, #p38, #p39, #p40{
+	border-color:orange;
+	background-color:#ECF58E;	 
+ }
+ 
+ #p41, #p42, #p43, #p44, #p45, #p46, #p47, #p48, #p49, #p50{
+	border-color:orange;
+	background-color:#ECF58E;	 
+ }

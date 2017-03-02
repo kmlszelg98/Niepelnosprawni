@@ -1,0 +1,71 @@
+.navbar-fixed-top {
+min-height: 60px;
+font-family: Verdana, Geneva, sans-serif;
+font-weight: bold;
+font-size: 120%;
+}
+
+.navbar-brand {
+	font-size:150%;
+}
+
+.container {
+	padding-top:5px;	
+}
+ 
+ .text {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:100%;
+	color:gray;
+	font-weight:none;
+ }
+ 
+ .tekst {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:30px;
+	color:gray;
+	font-weight:none;
+ }
+ 
+  .tresc {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:25px;
+	color:black;
+	font-weight:none;
+ }
+ 
+ .head-text {
+	 font-family: Verdana, Geneva, sans-serif;
+	 font-size:xx-large;
+	 font-weight:bold;
+	 color:gray;
+	 text-align:center;
+ }
+ 
+ #header {
+	 padding-top:85px;
+ }
+  
+ .img-start {
+	height: 500px;
+	width: auto;
+ }
+ 
+ .img-start2 {
+	height: 450px;
+	width: auto;
+ }
+ 
+ #portfolio {
+	 height:500px;
+ }
+ 
+ #space {
+	 height:100px;
+ }
+ 
+ #panel {
+	 padding-top:20px;
+	 
+ }
+ 

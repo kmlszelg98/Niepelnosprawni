@@ -1,0 +1,44 @@
+.btn {
+	font-size:50px;
+	background-color:#b3d1ff;
+	font-family: Verdana, Geneva, sans-serif;
+	color:gray;
+}
+
+.btn-info:hover,.btn-info:focus {
+  background-color: #93B7ED !important;
+  border-color: #93B7ED !important;
+  color:gray;
+}
+
+.navbar-default {
+  background-color:#b3d1ff;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ 
+ 
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #000;
+      background: #C5DFFC;
+	  border-radius: 15px;
+ }
+ 
+ .index {
+	 background-color:#C5DFFC;
+ }
+ 
+ .border {
+	border-style: solid;
+    border-width: 2px;
+    border-radius:15px;
+	border-color: #93B7ED;
+	
+	background-color:#b3d1ff;
+ }
+ 
+ .border:hover,.border:focus {
+	background-color: #93B7ED; 
+ }

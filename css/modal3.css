@@ -1,0 +1,33 @@
+#modal-dialog {
+	padding-top:80px;
+}
+
+.form {
+	height: 44px;
+  font-size: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.login-help{
+  font-size: 12px;
+}
+
+.image {
+	height: 200px;
+	width: auto;
+ }
+ 
+ 
+ 
+ #space_modal {
+	padding-top:130px;
+ }
