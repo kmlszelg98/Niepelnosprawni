@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+   
+    <link href="temp_pliki/scrolling-nav.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="css/page_i.css" rel="stylesheet">
+	<link href="css/kolor_wideo.css" rel="stylesheet"> 
+	<link href="css/modal3.css" rel="stylesheet"> 
+	
+	<script src="js/page.js"></script>
+  
+  <script src="js/tracking-min.js"></script>
+  <script src="js/face-min.js"></script>
+   
+  
+  <script src="js/wideo3.js"></script>
+  <script>
+	
+   function wstecz() {
+		window.location.href='index.html';
+   }
+   
+	</script>
+  <style>
+video, canvas {
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+  }
+  
+  #mainNav{
+	position:absolute;
+	z-index:-1;
+  }
+  
+  .btn-lg {	
+	border-color:#b3d1ff;
+	background-color:#b3d1ff;
+	font-family: Verdana, Geneva, sans-serif;
+	color:gray;
+	}
+	
+	
+  </style>
+
+  
+</head>
+
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">           
+			<div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">                
+                    <li><a >Interfejs dla niepelnosprawnych</a></li>	
+            </div>
+        </div>        
+    </nav>
+	
+	<section id="head" style="display:block">   	
+		<button class="btn-info btn-lg btn-block button" id="p1" style="position:absolute;left:20%;top:300px; width:300px;height:100px;" onclick="pokaz('myModal');czysc('logowanie')">LOGOWANIE</button>
+		<button class="btn-info btn-lg btn-block button" id="p2" style="position:absolute;right:20%;top:300px; width:300px;height:100px;" onclick="pokaz('myModal2');czysc('rejestracja')">REJESTRACJA</button>
+		<button class="btn-info btn-lg btn-block button" id="p2" style="position:absolute;right:40%;top:500px; width:300px;height:100px;" onclick="wstecz()">WSTECZ</button>
+	</section>
+
+	<section id="myModal" style="display:none;" > 
+		<form id="logowanie" >
+			<input id="user_log" class="form" style="position:absolute;left:30%;top:100px; width:600px; height:50px" type="text" name="user" placeholder="Użytkownik">
+			<button class="btn-info btn-lg btn-block przycisk" id="p3" style="position:absolute;left:20%;top:200px; width:100px;height:100px;" onclick="user_log">.,?1</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p4" style="position:absolute;left:35%;top:200px; width:100px;height:100px;" onclick="user_log">ABC2</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p5" style="position:absolute;left:50%;top:200px; width:100px;height:100px;" onclick="user_log">DEF3</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p6" style="position:absolute;left:65%;top:200px; width:100px;height:100px;" onclick="user_log">GHI4</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p7" style="position:absolute;left:80%;top:200px; width:100px;height:100px;" onclick="user_log">JKL5</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p8" style="position:absolute;left:20%;top:400px; width:100px;height:100px;" onclick="user_log">MNO6</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p9" style="position:absolute;left:35%;top:400px; width:100px;height:100px;" onclick="user_log">PQRS7</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p10" style="position:absolute;left:50%;top:400px; width:100px;height:100px;" onclick="user_log">TUV8</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p11" style="position:absolute;left:65%;top:400px; width:100px;height:100px;" onclick="user_log">WXYZ9</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p12" style="position:absolute;left:80%;top:400px; width:100px;height:100px;" onclick="user_log"> 0</button>
+			<button class="btn-info btn-lg btn-block button" id="p13" style="position:absolute;left:30%;top:600px; width:200px;height:100px;" onclick="cofnij(user_log)">COFNIJ</button>
+			<button class="btn-info btn-lg btn-block button" id="p14" style="position:absolute;left:60%;top:600px; width:200px;height:100px;" onclick="pokaz('myModal11');czysc('logowanie2')">DALEJ</button>
+		</form>
+		
+	</section>	
+	
+	<section id="myModal11" style="display:none">
+    	<form id="logowanie2" >
+			<input id="pass_log" class="form" style="position:absolute;left:30%;top:100px; width:600px; height:50px" type="text" name="user" placeholder="Hasło">
+			<button class="btn-info btn-lg btn-block przycisk" id="p15" style="position:absolute;left:20%;top:200px; width:100px;height:100px;" onclick="pass_log">.,?1</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p16" style="position:absolute;left:35%;top:200px; width:100px;height:100px;" onclick="pass_log">ABC2</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p17" style="position:absolute;left:50%;top:200px; width:100px;height:100px;" onclick="pass_log">DEF3</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p18" style="position:absolute;left:65%;top:200px; width:100px;height:100px;" onclick="pass_log">GHI4</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p19" style="position:absolute;left:80%;top:200px; width:100px;height:100px;" onclick="pass_log">JKL5</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p20" style="position:absolute;left:20%;top:400px; width:100px;height:100px;" onclick="pass_log">MNO6</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p21" style="position:absolute;left:35%;top:400px; width:100px;height:100px;" onclick="pass_log">PQRS7</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p22" style="position:absolute;left:50%;top:400px; width:100px;height:100px;" onclick="pass_log">TUV8</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p23" style="position:absolute;left:65%;top:400px; width:100px;height:100px;" onclick="pass_log">WXYZ9</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p24" style="position:absolute;left:80%;top:400px; width:100px;height:100px;" onclick="pass_log"> 0</button>
+			<button class="btn-info btn-lg btn-block button" id="p25" style="position:absolute;left:30%;top:600px; width:200px;height:100px;" onclick="cofnij(pass_log)">COFNIJ</button>
+			<button class="btn-info btn-lg btn-block button" id="p26" style="position:absolute;left:60%;top:600px; width:200px;height:100px;" onclick="zaloguj()">LOGUJ</button>
+		</form>
+	</section>
+	
+	<section id="myModal2" style="display:none"> 	
+		<form id="rejestracja" >
+			<input id="user_reg" class="form" style="position:absolute;left:30%;top:100px; width:600px; height:50px" type="text" name="user" placeholder="Użytkownik">
+			<button class="btn-info btn-lg btn-block przycisk" id="p27" style="position:absolute;left:20%;top:200px; width:100px;height:100px;" onclick="user_reg">.,?1</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p28" style="position:absolute;left:35%;top:200px; width:100px;height:100px;" onclick="user_reg">ABC2</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p29" style="position:absolute;left:50%;top:200px; width:100px;height:100px;" onclick="user_reg">DEF3</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p30" style="position:absolute;left:65%;top:200px; width:100px;height:100px;" onclick="user_reg">GHI4</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p31" style="position:absolute;left:80%;top:200px; width:100px;height:100px;" onclick="user_reg">JKL5</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p32" style="position:absolute;left:20%;top:400px; width:100px;height:100px;" onclick="user_reg">MNO6</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p33" style="position:absolute;left:35%;top:400px; width:100px;height:100px;" onclick="user_reg">PQRS7</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p34" style="position:absolute;left:50%;top:400px; width:100px;height:100px;" onclick="user_reg">TUV8</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p35" style="position:absolute;left:65%;top:400px; width:100px;height:100px;" onclick="user_reg">WXYZ9</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p36" style="position:absolute;left:80%;top:400px; width:100px;height:100px;" onclick="user_reg"> 0</button>
+			<button class="btn-info btn-lg btn-block button" id="p37" style="position:absolute;left:30%;top:600px; width:200px;height:100px;" onclick="cofnij(user_reg)">COFNIJ</button>
+			<button class="btn-info btn-lg btn-block button" id="p38" style="position:absolute;left:60%;top:600px; width:200px;height:100px;" onclick="pokaz('myModal22');czysc('rejestracja2')">DALEJ</button>
+		</form>
+	</section>
+	
+	<section id="myModal22" style="display:none">
+    	<form id="rejestracja2" >
+			<input id="pass_reg" class="form" style="position:absolute;left:30%;top:100px; width:600px; height:50px" type="text" name="user" placeholder="Hasło">
+			<button class="btn-info btn-lg btn-block przycisk" id="p39" style="position:absolute;left:20%;top:200px; width:100px;height:100px;" onclick="pass_reg">.,?1</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p40" style="position:absolute;left:35%;top:200px; width:100px;height:100px;" onclick="pass_reg">ABC2</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p41" style="position:absolute;left:50%;top:200px; width:100px;height:100px;" onclick="pass_reg">DEF3</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p42" style="position:absolute;left:65%;top:200px; width:100px;height:100px;" onclick="pass_reg">GHI4</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p43" style="position:absolute;left:80%;top:200px; width:100px;height:100px;" onclick="pass_reg">JKL5</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p44" style="position:absolute;left:20%;top:400px; width:100px;height:100px;" onclick="pass_reg">MNO6</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p45" style="position:absolute;left:35%;top:400px; width:100px;height:100px;" onclick="pass_reg">PQRS7</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p46" style="position:absolute;left:50%;top:400px; width:100px;height:100px;" onclick="pass_reg">TUV8</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p47" style="position:absolute;left:65%;top:400px; width:100px;height:100px;" onclick="pass_reg">WXYZ9</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p48" style="position:absolute;left:80%;top:400px; width:100px;height:100px;" onclick="pass_reg"> 0</button>
+			<button class="btn-info btn-lg btn-block button" id="p49" style="position:absolute;left:30%;top:600px; width:200px;height:100px;" onclick="cofnij(pass_reg)">COFNIJ</button>
+			<button class="btn-info btn-lg btn-block button" id="p50" style="position:absolute;left:60%;top:600px; width:200px;height:100px;" onclick="rejestr()">REJESTRUJ</button>
+		</form>
+	</section>
+	
+	<div  class="demo-frame" >
+    <div class="demo-container">
+      <video  id="video" width="320" height="240"  preload autoplay loop muted></video>
+      <canvas id="canvas" width="320" height="240" style="position:absolute"></canvas>
+    </div>
+  </div>
+	
+		
+
+
+
+</body>
+</html>

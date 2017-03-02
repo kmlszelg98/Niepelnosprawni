@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+   
+    <link href="temp_pliki/scrolling-nav.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="css/page_i.css" rel="stylesheet">
+	<link href="css/kolor_wideo.css" rel="stylesheet"> 
+	<link href="css/modal3.css" rel="stylesheet"> 
+	
+	<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+	<script src="js/page.js"></script>
+	<script src="js/mail2.js"></script>	
+  
+  <script src="js/tracking-min.js"></script>
+  <script src="js/face-min.js"></script>
+   
+  
+  <script src="js/wideo3.js"></script>
+  <script>
+	
+   function wstecz() {
+		window.location.href='test.html';
+   }
+   
+	</script>
+  <style>
+ video, canvas {
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+  }
+  
+  #mainNav{
+	position:absolute;
+	z-index:-1;
+  }
+  
+  .btn-lg {	
+	border-color:#b3d1ff;
+	background-color:#b3d1ff;
+	font-family: Verdana, Geneva, sans-serif;
+	color:gray;
+	}
+	
+	
+  </style>
+
+  
+</head>
+
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">           
+			<div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">                
+                    <li><a >Interfejs dla niepelnosprawnych</a></li>	
+            </div>
+        </div>        
+    </nav>
+	
+	<section id="head" style="display:block">   	
+		<button class="btn-info btn-lg btn-block button" id="p1" style="position:absolute;left:20%;top:300px; width:300px;height:100px;" onclick="pokaz('myModal');odczytMaila()">ODCZYT MAILA</button>
+		<button class="btn-info btn-lg btn-block button" id="p2" style="position:absolute;right:20%;top:300px; width:300px;height:100px;" onclick="pokaz('myModal2');czysc('sending')">NAPISZ MAILA</button>
+		<button class="btn-info btn-lg btn-block button" id="p2" style="position:absolute;right:40%;top:500px; width:300px;height:100px;" onclick="wstecz()">WSTECZ</button>
+	</section>
+	
+	<section id="myModal" style="display:none;" > 
+		
+				
+				<button id="next_but" type="button" class="btn-info btn-lg btn-block button" style="position:absolute;left:30%;top:200px; width:500px;height:100px;" 
+				onclick="nastepnyMail();odczytMaila()">Nastepny</button>
+				
+				<div id="miejsceNaMaila" class="border tekst" style="position:absolute;left:20%;top:350px; width:1000px">
+				<div id="nadawcaMaila">
+				Od: <div id="adresM" style="display:inline"></div>
+				</div>
+				<div id="tematMaila">
+				Temat: <div id="tematM" style="display:inline"></div>
+				</div>
+				<div id="trescMaila">
+				Treść: <div id="trescM" style="display:inline"></div>
+				</div>
+				</div>
+				
+				
+                <div id="border1" class="col-lg-12 border" style="display:none">	
+					<div class="tekst col-lg-3 adres" >
+						Agnieszka Mazur
+					</div>
+					<div class="tekst col-lg-9 temat" >
+						Projekt z wzorców
+					</div>
+					<div id="mail1" class="tresc" >
+						Przesyłam kod naszego projektu
+					</div>
+                </div>
+				
+				<div id="border2" class="col-lg-12 border"  style="display:none">	
+					<div class="tekst col-lg-3 adres">
+						Anna Borek
+					</div>
+					<div class="tekst col-lg-9 temat">
+						Przykładowe rozwiązania
+					</div>
+					<div id="mail2" class="tresc">
+						W załączniku są przykładowe rozwiązania dla niewidomych
+						
+					</div>
+                </div>
+
+				<div id="border3" class="col-lg-12 border" style="display:none">	
+					<div class="tekst col-lg-3 adres">
+						Magda Ludwin
+					</div>
+					<div class="tekst col-lg-9 temat">
+						Zadanie domowe
+					</div>
+					<div id="mail3" class="tresc">
+						Oto zadanie domowe z baz danych
+					</div>
+                </div>		
+				
+				<button id="ret_but" type="button" class="btn-info btn-lg btn-block button" style="position:absolute;left:30%;top:70%; width:500px;height:100px;" 
+				onclick="pokaz('head')">Powrót</button>
+	</section>		
+	
+	
+	<section id="myModal2" style="display:none"> 	
+		<form id="sending" >
+			<input id="to" class="form" style="position:absolute;left:30%;top:100px; width:600px; height:50px" type="text" name="user" placeholder="Mail">
+			<button class="btn-info btn-lg btn-block przycisk" id="p5" style="position:absolute;left:20%;top:200px; width:100px;height:100px;" onclick="to">.,?1</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p6" style="position:absolute;left:35%;top:200px; width:100px;height:100px;" onclick="to">ABC2</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p7" style="position:absolute;left:50%;top:200px; width:100px;height:100px;" onclick="to">DEF3</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p8" style="position:absolute;left:65%;top:200px; width:100px;height:100px;" onclick="to">GHI4</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p9" style="position:absolute;left:80%;top:200px; width:100px;height:100px;" onclick="to">JKL5</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p10" style="position:absolute;left:20%;top:400px; width:100px;height:100px;" onclick="to">MNO6</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p11" style="position:absolute;left:35%;top:400px; width:100px;height:100px;" onclick="to">PQRS7</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p12" style="position:absolute;left:50%;top:400px; width:100px;height:100px;" onclick="to">TUV8</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p13" style="position:absolute;left:65%;top:400px; width:100px;height:100px;" onclick="to">WXYZ9</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p14" style="position:absolute;left:80%;top:400px; width:100px;height:100px;" onclick="to"> 0</button>
+			<button class="btn-info btn-lg btn-block button" id="p15" style="position:absolute;left:30%;top:600px; width:200px;height:100px;" onclick="cofnij(to)">COFNIJ</button>
+			<button class="btn-info btn-lg btn-block button" id="p16" style="position:absolute;left:60%;top:600px; width:200px;height:100px;" onclick="pokaz('myModal21');czysc('sending2')">DALEJ</button>
+		</form>
+	</section>
+	
+	<section id="myModal21" style="display:none"> 	
+		<form id="sending2" >
+			<input id="title" class="form" style="position:absolute;left:30%;top:100px; width:600px; height:50px" type="text" name="user" placeholder="Temat">
+			<button class="btn-info btn-lg btn-block przycisk" id="p17" style="position:absolute;left:20%;top:200px; width:100px;height:100px;" onclick="title">.,?1</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p18" style="position:absolute;left:35%;top:200px; width:100px;height:100px;" onclick="title">ABC2</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p19" style="position:absolute;left:50%;top:200px; width:100px;height:100px;" onclick="title">DEF3</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p20" style="position:absolute;left:65%;top:200px; width:100px;height:100px;" onclick="title">GHI4</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p21" style="position:absolute;left:80%;top:200px; width:100px;height:100px;" onclick="title">JKL5</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p22" style="position:absolute;left:20%;top:400px; width:100px;height:100px;" onclick="title">MNO6</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p23" style="position:absolute;left:35%;top:400px; width:100px;height:100px;" onclick="title">PQRS7</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p24" style="position:absolute;left:50%;top:400px; width:100px;height:100px;" onclick="title">TUV8</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p25" style="position:absolute;left:65%;top:400px; width:100px;height:100px;" onclick="title">WXYZ9</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p26" style="position:absolute;left:80%;top:400px; width:100px;height:100px;" onclick="title"> 0</button>
+			<button class="btn-info btn-lg btn-block button" id="p27" style="position:absolute;left:30%;top:600px; width:200px;height:100px;" onclick="cofnij(title)">COFNIJ</button>
+			<button class="btn-info btn-lg btn-block button" id="p28" style="position:absolute;left:60%;top:600px; width:200px;height:100px;" onclick="pokaz('myModal22');czysc('sending3')">DALEJ</button>
+		</form>
+	</section>
+	
+	<section id="myModal22" style="display:none"> 	
+		<form id="sending3" >
+			
+			<textarea id="tresc" rows="4" cols="53" style="position:absolute;left:30%;top:100px;" type="text" name="val" placeholder="Treść"></textarea>
+			<button class="btn-info btn-lg btn-block przycisk" id="p29" style="position:absolute;left:20%;top:200px; width:100px;height:100px;" onclick="tresc">.,?1</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p30" style="position:absolute;left:35%;top:200px; width:100px;height:100px;" onclick="tresc">ABC2</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p31" style="position:absolute;left:50%;top:200px; width:100px;height:100px;" onclick="tresc">DEF3</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p32" style="position:absolute;left:65%;top:200px; width:100px;height:100px;" onclick="tresc">GHI4</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p33" style="position:absolute;left:80%;top:200px; width:100px;height:100px;" onclick="tresc">JKL5</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p34" style="position:absolute;left:20%;top:400px; width:100px;height:100px;" onclick="tresc">MNO6</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p35" style="position:absolute;left:35%;top:400px; width:100px;height:100px;" onclick="tresc">PQRS7</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p36" style="position:absolute;left:50%;top:400px; width:100px;height:100px;" onclick="tresc">TUV8</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p37" style="position:absolute;left:65%;top:400px; width:100px;height:100px;" onclick="tresc">WXYZ9</button>
+			<button class="btn-info btn-lg btn-block przycisk" id="p38" style="position:absolute;left:80%;top:400px; width:100px;height:100px;" onclick="tresc"> 0</button>
+			<button class="btn-info btn-lg btn-block button" id="p39" style="position:absolute;left:30%;top:600px; width:200px;height:100px;" onclick="cofnij(tresc)">COFNIJ</button>
+			<button class="btn-info btn-lg btn-block button" id="p40"style="position:absolute;left:60%;top:600px; width:200px;height:100px;" onclick="pokaz('head')">WYSLIJ</button>
+		</form>
+	</section>	
+	<div  class="demo-frame" >
+    <div class="demo-container">
+      <video  id="video" width="320" height="240"  preload autoplay loop muted></video>
+      <canvas id="canvas" width="320" height="240" style="position:absolute"></canvas>
+    </div>
+  </div>
+	
+		
+
+
+
+</body>
+</html>

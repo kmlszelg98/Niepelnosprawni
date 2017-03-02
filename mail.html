@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+   
+    <link href="temp_pliki/scrolling-nav.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="css/page_i.css" rel="stylesheet">
+	<link href="css/kolor_glos.css" rel="stylesheet">
+	<link href="css/modal_mail_i.css" rel="stylesheet">
+	 
+	
+	<script src="js/page.js"></script>	
+	
+	<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+	<script src="js/mail2.js"></script>
+	<script src="js/speech2.js"></script>
+	
+	<script>
+	
+   function wstecz() {
+		window.location.href='glos.html';
+   }
+   
+	</script>
+	
+</head>
+
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+	 
+	
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Interfejs dla niepełnosprawnych </a>
+				
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="nav">
+                    <li  class="active"><a id="Wyloguj" class ="page-scroll" href="glos.html" onclick="wstecz()">Wyloguj</a></li>
+								
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	
+	<!-- Header -->
+    <section id ="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+					<div id="panel">
+						<img class="img-responsive center-block img-start2" src="img/icon-mail.png" alt="">
+						<div class="col-lg-6">
+							<button id="Odczytaj" type="button" class="btn btn-info btn-lg btn-block" onclick="pokaz('myModal')">
+							Odczytaj Maila
+							</button>
+						</div>
+						<div class="col-lg-6">
+							<button id="Napisz" type="button" class="btn btn-info btn-lg btn-block" onclick="pokaz('myModal2');czysc('sending')">
+							Napisz Maila
+							</button>
+						</div>						
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section id ="myModal" style="display:none">
+        <div class="container">
+            <div class="row">
+				<div class="tekst">
+					Skrzynka odbiorcza
+				</div>
+                <div id="border1" class="col-lg-12 border" onclick="czytaj('mail1')">	
+					<div class="tekst col-lg-3 adres">
+						Agnieszka Mazur
+					</div>
+					<div class="tekst col-lg-9 temat">
+						Projekt z wzorców
+					</div>
+					<div id="mail1" class="tekst tresc" style="display:none">
+						Przesyłam kod naszego projektu
+					</div>
+                </div>
+				<div id="space_modal"></div>
+				<div id="border2" class="col-lg-12 border" onclick="czytaj('mail2')">	
+					<div class="tekst col-lg-3 adres">
+						Anna Borek
+					</div>
+					<div class="tekst col-lg-9 temat">
+						Przykładowe rozwiązania
+					</div>
+					<div id="mail2" class="tresc" style="display:none">
+						W załączniku są przykładowe rozwiązania dla niewidomych
+					</div>
+                </div>
+				<div id="space_modal"></div>
+				<div id="border3" class="col-lg-12 border" onclick="czytaj('mail3')"">	
+					<div class="tekst col-lg-3 adres">
+						Magda Ludwin
+					</div>
+					<div class="tekst col-lg-9 temat">
+						Zadanie domowe
+					</div>
+					<div id="mail3" class="tresc" style="display:none">
+						Oto zadanie domowe z baz danych
+					</div>
+                </div>
+				<div id="space_modal"></div>
+				<button id="ret_but" type="button" class="btn btn-info btn-lg btn-block" onclick="pokaz('header')">
+				Powrót
+				</button>
+        </div>
+            </div>
+    </section>
+	
+	<section id ="myModal2" style="display:none">
+        <div class="modal-dialog" id="modal-dialog">
+			<div class="loginmodal-container">
+				<img class="center-block image" src="img/send.png" alt="" onclick="pokaz('header')">
+				<form id="sending">
+					<input id="to" type="text" name="user" placeholder="Mail">
+					<input id="title" type="text" name="pass" placeholder="Temat">
+					<textarea id="tresc" rows="4" cols="53" name="val" placeholder="Treść"></textarea>
+					<button id="mail_but" type="button" class="btn btn-info btn-lg btn-block login loginmodal-submit" onclick="pokaz('header')">
+					Wyślij
+					</button>
+					
+				</form>		 
+			</div>
+		</div>
+    </section>
+	
+	
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+	    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Skrzynka Pocztowa</title>
+
+   
+    <link href="temp_pliki/scrolling-nav.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="css/page_i.css" rel="stylesheet">
+	<link href="css/kolor_intel.css" rel="stylesheet"> 
+	<link href="css/modal_i.css" rel="stylesheet"> 
+	
+	<script src="js/page.js"></script>
+	
+	
+	<script>
+	
+   function wstecz() {
+		window.location.href='index.html';
+   }
+   
+	</script>
+	
+	
+
+
+</head>
+
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+	 
+	
+	
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Interfejs dla niepełnosprawnych </a>
+				
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="nav">
+                    <li  class="active" ><a id="Wstecz" class ="page-scroll" href="index.html" onclick="wstecz()" >Wstecz</a></li>
+								
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	
+	<!-- Header -->
+    <section id ="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+					<div id="panel">
+						
+						<div class="col-lg-6">
+							<button id="Logowanie" type="button" class="btn btn-info btn-lg btn-block" onclick="pokaz('myModal');czysc('logowanie');">
+							Logowanie
+							</button>
+						</div>
+						<div class="col-lg-6">
+							<button id="Rejestracja" type="button" class="btn btn-info btn-lg btn-block" onclick="pokaz('myModal2');czysc('rejestracja');">
+							Rejestracja
+							</button>
+						</div>
+						
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+
+
+	<div id="myModal" style="display:none">
+    	<div class="modal-dialog" id="modal-dialog1">
+			<div class="loginmodal-container">
+				
+				
+				<form id="logowanie">
+					<input id="user_log" type="text" name="user" placeholder="Użytkownik">
+					
+					<button id="but_log" type="button" class="btn btn-info btn-lg btn-block login loginmodal-submit" onclick="pokaz('myModal11');czysc('logowanie2');">
+					Dalej
+					</button>
+				 </form>
+				 
+					
+				 <div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				 </div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="myModal11" style="display:none">
+    	<div class="modal-dialog" id="modal-dialog11">
+			<div class="loginmodal-container">
+				
+				
+				<form id="logowanie2">
+					<input id="pass_log" type="password" name="pass" placeholder="Hasło">
+					<button id="but_log1" type="button" class="btn btn-info btn-lg btn-block login loginmodal-submit" onclick="zaloguj()">
+					Dalej
+					</button>
+				 </form>
+				 
+					
+				 <div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				 </div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="myModal2" style="display:none">
+    	<div class="modal-dialog" id="modal-dialog2">
+			
+			<div class="loginmodal-container">
+			
+				
+				<form id="rejestracja">
+					<input id="user_reg" type="text" name="user" placeholder="Użytkownik">
+
+					<button id="but_reg1" type="button" class="btn btn-info btn-lg btn-block login loginmodal-submit" onclick="pokaz('myModal22');czysc('rejestracja2');">
+					Dalej
+					</button>
+				 </form>
+								 
+			</div>
+		</div>
+	</div>
+	
+	<div id="myModal22" style="display:none">
+    	<div class="modal-dialog" id="modal-dialog22">
+			
+			<div class="loginmodal-container">
+			
+				
+				<form id="rejestracja2">
+					
+					<input id="pass_reg" type="password" name="pass" placeholder="Hasło">
+					<button id="but_reg2" type="button" class="btn btn-info btn-lg btn-block login loginmodal-submit" onclick="rejestr()">
+					Rejestracja
+					</button>
+				 </form>
+								 
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="temp_pliki/jquery_002.js"></script>
+    <script src="temp_pliki/jquery.js"></script>
+    <script src="temp_pliki/scrolling-nav.js"></script>
+	
+
+</body>
+
+</html>
